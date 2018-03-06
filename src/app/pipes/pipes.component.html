@@ -1,0 +1,7 @@
+<h3>
+  Busca tu comida:
+</h3>
+<input [(ngModel)]="search" placeholder="escribe la comida" type="text">
+<p *ngFor="let food of foods | filter:'name':search">
+  {{food.name}}
+</p>
